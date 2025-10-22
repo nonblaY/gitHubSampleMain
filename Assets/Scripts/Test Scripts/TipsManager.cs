@@ -14,6 +14,17 @@ public class TipsManager : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+        gameObject.SetActive(false);
+    }
+
+    public void ActivateTipsManager()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void DeactivateTipsManager()
+    {
+        gameObject.SetActive(false);
     }
 
     private void OnEnable()
